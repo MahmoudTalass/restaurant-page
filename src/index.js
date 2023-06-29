@@ -1,1 +1,3 @@
-console.log("is working!")
+import loadPage from './home-page'
+
+loadPage()
