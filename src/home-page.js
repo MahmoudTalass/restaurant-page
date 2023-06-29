@@ -1,4 +1,4 @@
-import soupAndBreadImg from "./assets/soup-and-bread.jpg";
+import image from "./assets/soup-and-bread.jpg";
 
 const content = document.querySelector("#content");
 
@@ -8,7 +8,7 @@ function loadPage() {
    const navContainer = document.createElement("nav");
    const navLinks = document.createElement("ul");
    const mainPage = document.createElement("main");
-   const siteImg = document.createElement("img");
+   const pageImg = new Image();
    const restaurantDescCont = document.createElement("article");
    const restaurantDesc = document.createElement("p");
 
@@ -26,9 +26,9 @@ function loadPage() {
       navLinks.appendChild(navLinkContainer);
    }
 
-   mainPage.appendChild(siteImg);
-   siteImg.src = soupAndBreadImg;
-   siteImg.alt = "Soup and Bread image";
+   pageImg.src = image;
+   pageImg.alt = "Soup and Bread image";
+   mainPage.appendChild(pageImg);
 
    restaurantDesc.textContent =
       "Welcome to The Bread Bowl, where warm bread and comforting soups meet in perfect harmony. Indulge in our freshly baked artisanal breads and savor our soul-soothing soup creations. Customize your perfect pairing and experience a delightful culinary journey that nourishes both body and soul. Join us for a cozy and satisfying dining experience at The Bread Bowl.";
@@ -38,3 +38,5 @@ function loadPage() {
    content.appendChild(header)
    content.appendChild(mainPage)
 }
+
+export default loadPage;
