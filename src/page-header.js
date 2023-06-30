@@ -5,6 +5,10 @@ function loadHeader() {
    const restaurantName = document.createElement("h1");
    const navContainer = document.createElement("nav");
 
+   header.classList.add('page-header')
+   restaurantName.classList.add("page-heading")
+   navContainer.classList.add("page-nav")
+
    restaurantName.textContent = "Bread and Soup";
    header.appendChild(restaurantName);
    header.appendChild(navContainer);
