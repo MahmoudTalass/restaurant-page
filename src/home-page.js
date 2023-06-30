@@ -3,10 +3,10 @@ import image from "./assets/soup-and-bread.jpg";
 const content = document.querySelector("#content");
 
 function loadPage() {
+   const mainPage = document.createElement("main");
    const pageImg = new Image();
    const restaurantDescCont = document.createElement("article");
    const restaurantDesc = document.createElement("p");
-   const mainPage = document.createElement("main");
    const hoursContainer = document.createElement("article");
    const hoursHeading = document.createElement("h2");
    const weekdayHours = document.createElement("p");
@@ -39,7 +39,7 @@ function loadPage() {
    weekdayHours.classList.add("hours", "weekday-hours");
    weekendHours.classList.add("hours", "weekend-hours");
 
-   mainPage.classList.add("home-page-content");
+   mainPage.classList.add("home-page-content", "main-page");
 
    content.appendChild(mainPage);
 }
