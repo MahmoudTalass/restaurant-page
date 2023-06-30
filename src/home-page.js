@@ -20,7 +20,7 @@ function loadPage() {
    pageImg.alt = "Soup and Bread image";
 
    restaurantDesc.textContent =
-      "Welcome to The Bread Bowl, where warm bread and comforting soups meet in perfect harmony. Indulge in our freshly baked artisanal breads and savor our soul-soothing soup creations. Customize your perfect pairing and experience a delightful culinary journey that nourishes both body and soul. Join us for a cozy and satisfying dining experience at The Bread Bowl.";
+      "Welcome to The Bread & Soup, where warm bread and comforting soups meet in perfect harmony. Indulge in our freshly baked artisanal breads and savor our soul-soothing soup creations. Customize your perfect pairing and experience a delightful culinary journey that nourishes both body and soul. Join us for a cozy and satisfying dining experience at The Bread & Soup.";
 
    restaurantDescCont.appendChild(pageImg);
    restaurantDescCont.appendChild(restaurantDesc);
