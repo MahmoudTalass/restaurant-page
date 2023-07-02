@@ -1,17 +1,17 @@
 const content = document.querySelector("#content");
+const footer = document.createElement("footer");
 
 function loadFooter() {
-   const footer = document.createElement("footer");
    const addressContainer = document.createElement("div");
-   const address = document.createElement("p")
+   const address = document.createElement("p");
 
    footer.classList.add("footer");
    addressContainer.classList.add("address-container");
-   address.classList.add("address")
+   address.classList.add("address");
 
    address.textContent = "Address: 123 Fakestreet Ave Somecity, CA 12345";
 
-   addressContainer.appendChild(address)
+   addressContainer.appendChild(address);
 
    footer.appendChild(addressContainer);
 
@@ -19,3 +19,4 @@ function loadFooter() {
 }
 
 export default loadFooter;
+export { footer };
