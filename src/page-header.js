@@ -11,9 +11,14 @@ function loadHeader() {
    header.classList.add("page-header");
    restaurantName.classList.add("page-heading");
    navContainer.classList.add("page-nav");
-   homeBtn.classList.add("nav-btn")
-   menuBtn.classList.add("nav-btn")
-   contactBtn.classList.add("nav-btn")
+
+   homeBtn.classList.add("nav-btn");
+   menuBtn.classList.add("nav-btn");
+   contactBtn.classList.add("nav-btn");
+
+   homeBtn.id = "home-btn";
+   menuBtn.id = "menu-btn";
+   contactBtn.id = "contact-btn";
 
    restaurantName.textContent = "Bread & Soup";
    homeBtn.textContent = "Home";
