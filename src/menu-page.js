@@ -1,3 +1,5 @@
+import { footer } from "./page-footer";
+
 const content = document.querySelector("#content");
 
 function loadMenu() {
@@ -84,6 +86,8 @@ function loadMenu() {
    menuItemDesc6.classList.add("menu-item-desc");
    menuItemDesc7.classList.add("menu-item-desc");
 
+   menuHeader.textContent = "Menu"
+
    menuGroupHeading1.textContent = "Soups";
    menuGroupHeading2.textContent = "Sandwiches";
    menuGroupHeading3.textContent = "Beverages";
@@ -158,6 +162,11 @@ function loadMenu() {
    menuContainer.appendChild(menuGroup1);
    menuContainer.appendChild(menuGroup2);
    menuContainer.appendChild(menuGroup3);
+
+   mainContent.appendChild(menuHeader)
+   mainContent.appendChild(menuContainer)
+
+   content.insertBefore(mainContent, footer)
 }
 
 export default loadMenu;

@@ -1,3 +1,4 @@
+import { footer } from "./page-footer";
 import image from "./assets/soup-and-bread.jpg";
 
 const content = document.querySelector("#content");
@@ -41,7 +42,7 @@ function loadHome() {
 
    mainContent.classList.add("home-page-content", "main-content");
 
-   content.appendChild(mainContent);
+   content.insertBefore(mainContent, footer);
 }
 
 export default loadHome;
