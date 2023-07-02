@@ -2,8 +2,8 @@ import image from "./assets/soup-and-bread.jpg";
 
 const content = document.querySelector("#content");
 
-function loadPage() {
-   const mainPage = document.createElement("main");
+function loadHome() {
+   const mainContent = document.createElement("main");
    const pageImg = new Image();
    const restaurantDescCont = document.createElement("article");
    const restaurantDesc = document.createElement("p");
@@ -28,8 +28,8 @@ function loadPage() {
    hoursContainer.appendChild(weekdayHours);
    hoursContainer.appendChild(weekendHours);
 
-   mainPage.appendChild(restaurantDescCont);
-   mainPage.appendChild(hoursContainer);
+   mainContent.appendChild(restaurantDescCont);
+   mainContent.appendChild(hoursContainer);
 
    pageImg.classList.add("soup-and-bread-img");
    restaurantDesc.classList.add("description");
@@ -39,9 +39,9 @@ function loadPage() {
    weekdayHours.classList.add("hours", "weekday-hours");
    weekendHours.classList.add("hours", "weekend-hours");
 
-   mainPage.classList.add("home-page-content", "main-page");
+   mainContent.classList.add("home-page-content", "main-content");
 
-   content.appendChild(mainPage);
+   content.appendChild(mainContent);
 }
 
-export default loadPage;
+export default loadHome;
