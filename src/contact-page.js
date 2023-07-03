@@ -4,7 +4,7 @@ const content = document.querySelector("#content");
 
 function loadContacts() {
    const mainContent = document.createElement("main");
-   const contactsContainer = dcoument.createElement("article");
+   const contactsContainer = document.createElement("article");
    const contactsHeading = document.createElement("h2");
    const emailContainer = document.createElement("div");
    const emailHeading = document.createElement("span");
@@ -28,7 +28,7 @@ function loadContacts() {
    phoneNumHeading.classList.add("phone-num-heading");
    phoneNumber.classList.add("phone-number");
 
-   mainContent.classList.add("home-page-content", "main-content");
+   mainContent.classList.add("contact-page-content", "main-content");
 
    emailContainer.appendChild(emailHeading);
    emailContainer.appendChild(email);
