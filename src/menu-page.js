@@ -4,7 +4,7 @@ const content = document.querySelector("#content");
 
 function loadMenu() {
    const mainContent = document.createElement("main");
-   const menuHeader = document.createElement("h2");
+   const menuHeading = document.createElement("h2");
    const menuContainer = document.createElement("article");
 
    // each contains a menu item group (ex. soups, beverages, etc) and their heading
@@ -50,17 +50,21 @@ function loadMenu() {
    const menuItemDesc7 = document.createElement("p");
 
    mainContent.classList.add("menu-page-content", "main-content");
-   menuHeader.classList.add("menu-header");
+   menuHeading.classList.add("menu-heading");
 
    menuContainer.classList.add("menu-container");
 
-   menuGroup1.classList.add("items-group");
-   menuGroup2.classList.add("items-group");
-   menuGroup3.classList.add("items-group");
+   menuGroup1.classList.add("menu-group");
+   menuGroup2.classList.add("menu-group");
+   menuGroup3.classList.add("menu-group");
 
-   menuGroupHeading1.classList.add("items-group-heading");
-   menuGroupHeading2.classList.add("items-group-heading");
-   menuGroupHeading3.classList.add("items-group-heading");
+   menuGroupHeading1.classList.add("menu-group-heading");
+   menuGroupHeading2.classList.add("menu-group-heading");
+   menuGroupHeading3.classList.add("menu-group-heading");
+
+   groupItemsContainer1.classList.add("menu-items-group")
+   groupItemsContainer2.classList.add("menu-items-group")
+   groupItemsContainer3.classList.add("menu-items-group")
 
    menuItemContainer1.classList.add("menu-item");
    menuItemContainer2.classList.add("menu-item");
@@ -86,7 +90,7 @@ function loadMenu() {
    menuItemDesc6.classList.add("menu-item-desc");
    menuItemDesc7.classList.add("menu-item-desc");
 
-   menuHeader.textContent = "Menu"
+   menuHeading.textContent = "Menu"
 
    menuGroupHeading1.textContent = "Soups";
    menuGroupHeading2.textContent = "Sandwiches";
@@ -97,7 +101,7 @@ function loadMenu() {
       " A classic combination of ripe tomatoes, aromatic basil, and savory herbs blended into a comforting and flavorful soup.";
 
    menuItemHeading2.textContent = "French Onion Soup";
-   menuItemHeading2.textContent =
+   menuItemDesc2.textContent =
       "Rich and hearty, this soup features caramelized onions simmered in a flavorful beef broth, topped with melted cheese and toasted croutons.";
 
    menuItemHeading3.textContent = "Chicken Noodle Soup";
@@ -138,8 +142,8 @@ function loadMenu() {
    // Sandwiches group
    menuItemContainer4.appendChild(menuItemHeading4);
    menuItemContainer4.appendChild(menuItemDesc4);
-   menuItemContainer5.appendChild(menuItemHeading4);
-   menuItemContainer5.appendChild(menuItemDesc4);
+   menuItemContainer5.appendChild(menuItemHeading5);
+   menuItemContainer5.appendChild(menuItemDesc5);
 
    groupItemsContainer2.appendChild(menuItemContainer4);
    groupItemsContainer2.appendChild(menuItemContainer5);
@@ -148,10 +152,10 @@ function loadMenu() {
    menuGroup2.appendChild(groupItemsContainer2);
 
    // Beverages group
-   menuItemContainer6.appendChild(menuItemHeading1);
-   menuItemContainer6.appendChild(menuItemDesc1);
-   menuItemContainer7.appendChild(menuItemHeading2);
-   menuItemContainer7.appendChild(menuItemDesc2);
+   menuItemContainer6.appendChild(menuItemHeading6);
+   menuItemContainer6.appendChild(menuItemDesc6);
+   menuItemContainer7.appendChild(menuItemHeading7);
+   menuItemContainer7.appendChild(menuItemDesc7);
 
    groupItemsContainer3.appendChild(menuItemContainer6);
    groupItemsContainer3.appendChild(menuItemContainer7);
@@ -163,7 +167,7 @@ function loadMenu() {
    menuContainer.appendChild(menuGroup2);
    menuContainer.appendChild(menuGroup3);
 
-   mainContent.appendChild(menuHeader)
+   mainContent.appendChild(menuHeading)
    mainContent.appendChild(menuContainer)
 
    content.insertBefore(mainContent, footer)
