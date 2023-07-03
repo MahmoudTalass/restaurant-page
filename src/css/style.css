@@ -11,6 +11,8 @@
    --color4: #f27b57;
    --color5: #fff;
    --color6: #091b1a;
+
+   --border-radius: 1rem;
 }
 
 body {
@@ -29,7 +31,7 @@ body {
 /* Main Content style (shared by all navs) */
 
 .main-content {
-   margin-top: 4rem;
+   margin-top: 2rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -43,16 +45,15 @@ body {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   height: 6rem;
+   height: fit-content;
    flex-wrap: wrap;
    gap: 2rem;
    flex-shrink: 0;
    padding: 1.5rem;
-   margin-bottom: 2rem;
 }
 
 .page-heading {
-   font-size: 3rem;
+   font-size: 2.8rem;
 }
 
 .page-nav {
@@ -78,7 +79,6 @@ body {
 .home-page-content {
    color: var(--color5);
    gap: 6rem;
-   margin-bottom: 5rem;
 }
 
 .description-container {
@@ -105,7 +105,7 @@ body {
    width: 350px;
    padding: 2rem;
    text-align: center;
-   border-radius: 1rem;
+   border-radius: var(--border-radius);
 }
 
 .hours-heading {
@@ -147,7 +147,7 @@ body {
    gap: 3rem;
    background-color: rgba(0, 0, 0, 0.4);
    padding: 2rem;
-   border-radius: 1rem;
+   border-radius: var(--border-radius);
 }
 
 .menu-items-group {
@@ -174,6 +174,41 @@ body {
 .menu-item-desc {
    line-height: 2rem;
 }
+
+
+/* Contact page style */
+
+.contact-page-content {
+   display: flex;
+   gap: 3rem;
+}
+
+.contacts-heading {
+   font-size: 2.5rem;
+}
+
+.contacts-container {
+   background-color: rgba(0, 0, 0, 0.4);
+   padding: 2.5rem 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   border-radius: var(--border-radius);
+}
+
+.email-container, 
+.phone-num-container {
+   display: flex;
+   gap: 0.5rem;
+   font-size: 1.2rem;
+   flex-direction: column;
+}
+
+.email-heading,
+.phone-num-heading {
+   font-weight: bold;
+}
+
 
 /* Footer style */
 
