@@ -91,6 +91,10 @@ body {
    flex-wrap: wrap;
 }
 
+.img-credit {
+   color: #fff;
+}
+
 .description {
    line-height: 2rem;
    width: min(100%, 700px);
